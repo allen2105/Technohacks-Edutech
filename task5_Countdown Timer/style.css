@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-image {
+    background-image: url('image.png'); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the background behind other content */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #9A7B4F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 60vh;
+    width: 550px;
+    background-color: #432616;
+    border: 2px solid #9A7B4F;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 5px black;
+    overflow: hidden;
+
+}
+
+.box #disp{
+    height: 10vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 10vh;
+}
+
+.box form{
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    line-height: 45vh;
+    text-align: center;
+}
+
+.box form input{
+    width: 130px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #9A7B4F;
+    color: black;
+    background-color: transparent;
+    font-size: 60px;
+    text-align: center;
+}
+
+.box form input::placeholder{
+    font-size: 20px;
+    color: #9A7B4F;
+    font-size: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box .btn{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box .btn button{
+    padding: 5px 10px;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box .btn button:hover{
+    background-color: #4A8BDF;
+     
+}
